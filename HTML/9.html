@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="https://search.jd.com/search">
+    <fieldset>
+      <legend>主要信息</legend>
+      <label for="zh">账户:</label>
+      <input id="zh" type="text" name="account" value="123456789" maxlength="20"><br>
+      <label for="mm">密码:</label>
+      <input id="mm" type="password" name="pwd" value="123456789" maxlength="20"><br>
+      性别:
+      <label>
+        <input type="radio" name="gender" value="male">男
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" checked>女
+      </label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>附加信息</legend>
+      爱好:
+      <label> <input type="checkbox" name="hobby" value="smoke">抽烟</label>
+      <label> <input type="checkbox" name="hobby" value="drink">喝酒</label>
+      <label> <input type="checkbox" name="hobby" value="perm" checked>烫头 </label>
+      <input type="hidden" name="secret" value="123">
+      <br>
+      其他:
+      <textarea name="other" cols="22" rows="5"></textarea>
+      <br>
+      籍贯:
+      <select name="place" id="">
+        <option value="hb">河北</option>
+        <option value="hn">河南</option>
+        <option value="gd" selected>广东</option>
+        <option value="zj">浙江</option>
+      </select>
+    </fieldset>
+    <br>
+    <!-- <button>确认</button> -->
+    <input type="submit" value="确认">
+    <!-- <button type="reset">重置</button> -->
+    <input type="reset" value="重置">
+    <button type="button">检测账户是否注册</button>
+  </form>
+</body>
+
+</html>
