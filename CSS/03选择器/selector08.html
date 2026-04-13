@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>兄弟选择器</title>
+  <style>
+    /* 紧紧相连的 p下面的第一个div*/
+    /* p+div {
+      color: red;
+    } */
+    /* 通用 p下面的所有div*/
+    p~div {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <p>1</p>
+  <div>2</div>
+  <p>3</p>
+  <div>4</div>
+</body>
+
+</html>

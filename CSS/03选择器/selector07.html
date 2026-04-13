@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>子代选择器</title>
+  <style>
+    dev span>a {
+      color: red;
+    }
+
+    /* 子代 > */
+    dev>a {
+      color: yellow;
+    }
+
+    /* 后代空格 */
+    dev a p {
+      color: blueviolet;
+    }
+  </style>
+</head>
+
+<body>
+  <dev>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <p>
+      <a class="a3" href="#">3</a>
+    <div>
+      <span>
+        <a href="#">4</a>
+      </span>
+    </div>
+    </p>
+  </dev>
+</body>
+
+</html>
