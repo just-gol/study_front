@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 选中元素中的一些位置 -->
+  <title>伪元素选择器</title>
+  <style>
+    div::first-letter {
+      color: red;
+      font-size: 40px;
+    }
+
+    div::first-line {
+      background-color: aqua;
+    }
+
+    div::selection {
+      background-color: beige;
+      color: blue;
+    }
+
+    div::before {
+      content: "¥";
+    }
+
+    div::after {
+      content: ".00";
+    }
+  </style>
+</head>
+
+<body>
+  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio deleniti, harum voluptate quos vel quibusdam
+    quisquam rem ipsam reiciendis hic! Eaque adipisci, architecto dolorem reiciendis excepturi numquam ea sequi,
+    voluptate praesentium sapiente delectus asperiores saepe beatae? Tempore aut delectus quaerat aperiam deleniti
+    numquam inventore est voluptate totam mollitia, fugit hic, repellat quibusdam culpa rerum nulla deserunt officia nam
+    amet assumenda?</div>
+  <div>100</div>
+  <div>200</div>
+  <div>300</div>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>伪类选择器</title>
+  <title>动态伪类选择器</title>
   <style>
     /* 没有访问 */
     a:link {
@@ -14,6 +14,20 @@
     a:visited {
       color: yellow;
     }
+
+    /* 悬浮 */
+    a:hover {
+      color: blue;
+    }
+
+    /* 选中 */
+    a:active {
+      color: cadetblue;
+    }
+
+    input:focus {
+      color: red;
+    }
   </style>
 </head>
 
@@ -21,6 +35,8 @@
   <a href="https://www.baidu.com">百度</a>
   <a href="https://www.google.com">谷歌</a>
   <a href="https://www.xiaomi.com">小米</a>
+  <br>
+  <input type="text">输入吧
 </body>
 
 </html>
