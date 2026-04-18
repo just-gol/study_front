@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>外边距塌陷</title>
+  <style>
+    .outer {
+      height: 500px;
+      width: 500px;
+      background-color: skyblue;
+      /* 解决溢出问题 */
+      overflow: hidden;
+    }
+
+    .inner1 {
+      height: 100px;
+      width: 100px;
+      background-color: orange;
+      margin-top: 50px;
+    }
+
+    .inner2 {
+      height: 100px;
+      width: 100px;
+      background-color: bisque;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="inner1">inner1</div>
+    <div class="inner2">inner2</div>
+  </div>
+</body>
+
+</html>

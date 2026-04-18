@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>外边距塌陷</title>
+  <style>
+    .box {
+      height: 200px;
+      width: 200px;
+    }
+
+    .box1 {
+      background-color: skyblue;
+      margin-bottom: 50px;
+    }
+
+    .box2 {
+      background-color: red;
+      margin-top: 60px;
+    }
+
+    .aaa {
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+    }
+
+    .box3 {
+      background-color: yellow;
+      margin-right: 50px;
+    }
+
+    .box4 {
+      background-color: chocolate;
+      margin-left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box box1">1</div>
+  <div class="box box2">2</div>
+
+  <div class="aaa box3">3</div>
+  <div class="aaa box4">4</div>
+  </div>
+</body>
+
+</html>
