@@ -1,0 +1,17 @@
+{
+  "name": "npm01",
+  "version": "1.0.0",
+  "description": "学习npm",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./http03.js",
+    "start": "node ./http03.js"
+  },
+  "dependencies": {
+    "uniq": "^1.0.1"
+  }
+}
