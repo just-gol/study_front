@@ -1,0 +1,26 @@
+{
+  "name": "Sam",
+  "age": 30,
+  "isDeveloper": true,
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Node.js"
+  ],
+  "projects": [
+    {
+      "name": "NestJS Backend",
+      "status": "ongoing",
+      "contributors": 3
+    },
+    {
+      "name": "E-commerce API",
+      "status": "completed",
+      "contributors": 5
+    }
+  ],
+  "contact": {
+    "email": "sam@example.com",
+    "phone": "+1234567890"
+  }
+}
