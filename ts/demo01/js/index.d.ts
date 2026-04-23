@@ -21,4 +21,33 @@ declare function getInfo2(name: string, age?: number): string;
 declare function getInfo3(name: string, age?: number): string;
 declare function getInfo4(name: string, age: number): string;
 declare function getInfo4(name: string): string;
+declare class Person {
+    name: string;
+    constructor(name: string);
+    run(): string;
+    work(): string;
+    static print(): void;
+}
+interface FullName {
+    firstName: string;
+}
+declare function printName(name: FullName): void;
+declare const user: {
+    firstName: string;
+};
+interface encrypt {
+    (key: string, value: string): string;
+}
+declare const mm: encrypt;
+interface Animal {
+    eat(str: string): void;
+}
+interface Person2 extends Animal {
+    work(): void;
+}
+declare class Web implements Person2 {
+    work(): void;
+    eat(str: string): void;
+}
+declare const w: Web;
 //# sourceMappingURL=index.d.ts.map

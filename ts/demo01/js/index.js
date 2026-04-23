@@ -80,7 +80,74 @@ function getInfo4(name, age) {
 }
 getInfo4("11", 11);
 //箭头函数
-setTimeout(() => {
-    console.log(1);
-}, 1000);
+// setTimeout(() => {
+//   console.log(1)
+// }, 1000)
+// es6
+// class Person {
+//   name: string;
+//   age: number;
+//   constructor(name: string, age: number) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+// let p = new Person("zs", 18);
+// console.log(p.name);
+// 继承
+// class Person {
+//   name: string; // 默认public
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+//   run(): string {
+//     return `${this.name}在运动`
+//   }
+// }
+// let p = new Person("王五");
+// console.log(p.run());
+// class Web extends Person {
+//   constructor(name: string) {
+//     super(name)
+//   }
+// }
+// let p2 = new Web("李斯");
+// console.log(p2.run())
+// 静态方法
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    run() {
+        return `${this.name}在运动`;
+    }
+    work() {
+        return `${this.name}在工作`;
+    }
+    static print() {
+        console.log("打印");
+    }
+}
+Person.print();
+function printName(name) {
+    console.log(name);
+}
+printName({ firstName: "hhh" });
+const user = { firstName: "小白" };
+printName(user);
+const mm = function (key, value) {
+    return key + value;
+};
+console.log(mm("1", "2"));
+class Web {
+    work() {
+        console.log("我要工作");
+    }
+    eat(str) {
+        console.log("吃" + str);
+    }
+}
+const w = new Web();
+w.work();
+w.eat("apple");
 //# sourceMappingURL=index.js.map
