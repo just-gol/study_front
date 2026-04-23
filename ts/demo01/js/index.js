@@ -164,4 +164,43 @@ const b2 = function (value, value2) {
 };
 console.log(b2("b", "c"));
 // 泛型类
+// 普通装饰器
+// function logClass(params: any) {
+//   console.log(params)
+//   params.prototype.apiUrl = "123"
+//   params.prototype.run = function () {
+//     console.log("我是一个run")
+//   }
+// }
+// @logClass
+// class Client {
+//   constructor() { }
+//   getData() { }
+// }
+// const c: any = new Client();
+// c.run()
+// 装饰器工厂
+// function logClass(params: string) {
+//   return function (target: any) {
+//     console.log(target)
+//     console.log(params)
+//   }
+// }
+// @logClass("小明")
+// class Client {
+//   constructor() { }
+//   getData() { }
+// }
+//方法装饰器
+function get(params) {
+    return function (target, method, desc) {
+        console.log(target);
+        console.log(method);
+        console.log(desc);
+    };
+}
+class Client {
+    constructor() { }
+    getData() { }
+}
 //# sourceMappingURL=index.js.map

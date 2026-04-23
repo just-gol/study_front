@@ -24,7 +24,6 @@ class MysqlDb<T> implements DBI<T> {
 class User {
   username: string | undefined
   password: string | undefined
-
 }
 
 const u = new User()

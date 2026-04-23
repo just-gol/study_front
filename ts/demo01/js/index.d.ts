@@ -59,4 +59,10 @@ interface Sky2<T> {
     (v1: T, v2: T): T;
 }
 declare const b2: Sky2<string>;
+declare function get(params: any): (target: any, method: any, desc: any) => void;
+declare class Client {
+    url: any | undefined;
+    constructor();
+    getData(): void;
+}
 //# sourceMappingURL=index.d.ts.map

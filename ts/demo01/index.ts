@@ -241,3 +241,51 @@ const b2: Sky2<string> = function <T>(value: T, value2: T): T {
 console.log(b2("b", "c"))
 
 // 泛型类
+
+
+// 普通装饰器
+// function logClass(params: any) {
+//   console.log(params)
+//   params.prototype.apiUrl = "123"
+//   params.prototype.run = function () {
+//     console.log("我是一个run")
+//   }
+// }
+
+// @logClass
+// class Client {
+//   constructor() { }
+//   getData() { }
+// }
+
+// const c: any = new Client();
+// c.run()
+
+// 装饰器工厂
+// function logClass(params: string) {
+//   return function (target: any) {
+//     console.log(target)
+//     console.log(params)
+//   }
+// }
+
+// @logClass("小明")
+// class Client {
+//   constructor() { }
+//   getData() { }
+// }
+
+//方法装饰器
+function get(params: any) {
+  return function (target: any, method: any, desc: any) {
+    console.log(target)
+    console.log(method)
+    console.log(desc)
+  }
+}
+
+class Client {
+  url: any | undefined
+  constructor() { }
+  getData() { }
+}
