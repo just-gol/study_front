@@ -6,6 +6,10 @@ function niejiao() {
   console.log("捏脚");
 }
 
+export function add(a, b) {
+  return a + b;
+}
+
 //暴露模块
 // module.exports = tiemo;
 
@@ -14,7 +18,7 @@ function niejiao() {
 //   tiemo, niejiao
 // }
 
-module.exports = text;
+// module.exports = text;
 
 // export { niejiao, tiemo };
 // import text from './text.json' with { type: 'json' };
