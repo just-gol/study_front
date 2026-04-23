@@ -50,4 +50,13 @@ declare class Web implements Person2 {
     eat(str: string): void;
 }
 declare const w: Web;
+declare function getDeta<T>(value: T): T;
+interface Sky {
+    <T>(v1: T, v2: T): T;
+}
+declare const b1: Sky;
+interface Sky2<T> {
+    (v1: T, v2: T): T;
+}
+declare const b2: Sky2<string>;
 //# sourceMappingURL=index.d.ts.map

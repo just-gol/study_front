@@ -211,3 +211,33 @@ class Web implements Person2 {
 const w = new Web();
 w.work()
 w.eat("apple")
+
+// 泛型
+function getDeta<T>(value: T): T {
+  return value;
+}
+
+console.log(getDeta(111));
+
+// 泛型接口
+interface Sky {
+  <T>(v1: T, v2: T): T
+}
+
+const b1: Sky = function <T>(value: T, value2: T): T {
+  return value;
+}
+
+console.log(b1<string>("b", "c"))
+
+interface Sky2<T> {
+  (v1: T, v2: T): T
+}
+
+const b2: Sky2<string> = function <T>(value: T, value2: T): T {
+  return value2;
+}
+
+console.log(b2("b", "c"))
+
+// 泛型类

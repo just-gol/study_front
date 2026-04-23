@@ -150,4 +150,18 @@ class Web {
 const w = new Web();
 w.work();
 w.eat("apple");
+// 泛型
+function getDeta(value) {
+    return value;
+}
+console.log(getDeta(111));
+const b1 = function (value, value2) {
+    return value;
+};
+console.log(b1("b", "c"));
+const b2 = function (value, value2) {
+    return value2;
+};
+console.log(b2("b", "c"));
+// 泛型类
 //# sourceMappingURL=index.js.map
