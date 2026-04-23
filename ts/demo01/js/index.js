@@ -47,4 +47,40 @@ run();
 // never类型
 let a;
 //函数
+// 匿名函数
+let fun = function () {
+    return 1;
+};
+console.log(fun());
+// 自定义参数
+function getInfo1(name, age) {
+    return `${name}----${age}`;
+}
+console.log(getInfo1("xiaoli", 18));
+// 可选参数必须放在最后面
+function getInfo2(name, age) {
+    return `${name}----${age}`;
+}
+console.log(getInfo2("xiaoli"));
+//默认参数
+function getInfo3(name, age = 35) {
+    return `${name}----${age}`;
+}
+console.log(getInfo3("xiaoli"));
+function getInfo4(name, age) {
+    if (typeof age === "number") {
+        console.log("我是1");
+    }
+    else if (typeof name == "string") {
+        console.log("我是2");
+    }
+    else {
+        console.log(3);
+    }
+}
+getInfo4("11", 11);
+//箭头函数
+setTimeout(() => {
+    console.log(1);
+}, 1000);
 //# sourceMappingURL=index.js.map

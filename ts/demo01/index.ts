@@ -52,3 +52,45 @@ run()
 let a: never
 
 //函数
+// 匿名函数
+let fun = function (): number {
+  return 1;
+}
+console.log(fun())
+// 自定义参数
+function getInfo1(name: string, age: number): string {
+  return `${name}----${age}`
+}
+
+console.log(getInfo1("xiaoli", 18));
+
+// 可选参数必须放在最后面
+function getInfo2(name: string, age?: number): string {
+  return `${name}----${age}`
+}
+console.log(getInfo2("xiaoli"));
+
+//默认参数
+function getInfo3(name: string, age: number = 35): string {
+  return `${name}----${age}`
+}
+console.log(getInfo3("xiaoli"));
+
+//重载
+function getInfo4(name: string, age: number): string
+function getInfo4(name: string): string
+function getInfo4(name: any, age?: any): any {
+  if (typeof age === "number") {
+    console.log("我是1")
+  } else if (typeof name == "string") {
+    console.log("我是2")
+  } else {
+    console.log(3)
+  }
+}
+getInfo4("11", 11)
+
+//箭头函数
+setTimeout(() => {
+  console.log(1)
+}, 1000)

@@ -15,4 +15,10 @@ declare let num1: undefined;
 declare let num2: number | undefined;
 declare function run(): void;
 declare let a: never;
+declare let fun: () => number;
+declare function getInfo1(name: string, age: number): string;
+declare function getInfo2(name: string, age?: number): string;
+declare function getInfo3(name: string, age?: number): string;
+declare function getInfo4(name: string, age: number): string;
+declare function getInfo4(name: string): string;
 //# sourceMappingURL=index.d.ts.map
