@@ -1,0 +1,50 @@
+"use strict";
+// 字符串
+let str = "nihao ts";
+let str1 = "jiayou";
+// 布尔类型
+var flag = true;
+flag = false;
+console.log(flag);
+// 数字类型(浮点型)
+var num = 123;
+num = 12.3;
+console.log(num);
+// 数组1
+let arr1 = [1, 2, 3];
+arr1.forEach(v => {
+    console.log(v);
+});
+// 数组2 泛型
+let arr2 = [2, 3, 4];
+console.log(arr2);
+//元组
+let arr3 = ["jiayou", false];
+console.log(arr3);
+// 枚举
+var Flag;
+(function (Flag) {
+    Flag[Flag["success"] = 1] = "success";
+    Flag[Flag["error"] = -1] = "error";
+})(Flag || (Flag = {}));
+let f = Flag.success;
+console.log(f);
+// 任意类型
+let any = "任意类型";
+console.log(any);
+any = 123;
+console.log(any);
+// null 和 undefined
+let num1;
+console.log(num1);
+let num2;
+console.log(num2);
+// void
+function run() {
+    console.log("没有返回类型");
+}
+run();
+// never类型
+let a;
+//函数
+//# sourceMappingURL=index.js.map
